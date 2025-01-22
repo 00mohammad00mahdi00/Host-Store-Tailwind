@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base{
+
+    @font-face {
+        font-family: "vazir";
+        src: url("./fonts/Vazir.ttf") format("truetype"),
+        url("./fonts/Vazir.woff") format("woff"),
+        url("./fonts/Vazir.woff2") format("woff2"),
+        url("./fonts/Vazir.eot") format("eot");
+    }
+
+    .header{
+        background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/banner/hero-banner-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background-attachment: fixed;
+    }
+    
+    *{
+        font-family: "vazir";
+    }
+}
+

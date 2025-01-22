@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./js/cdn.js"></script>
+    <title>سرویس های میزبان</title>
+</head>
+<body>
+    <!-- 
+        ---------------------------------------------------------------
+        | 1. Header
+        ---------------------------------------------------------------
+    -->
+
+    <header class="header">
+        <nav class="py-5 bg-[#7676FF] lg:bg-transparent">
+            <div class="container flex justify-between items-center py">
+                <div class="flex items-center gap-8 xl:gap-40">
+                    <!--this is main logo -->
+                    <div>
+                        <img src="./img/logo.png" alt="logo">
+                    </div>
+                    <!--this is menu mobile  -->
+                    <div id="menuMobile" class="fixed lg:hidden top-20 bg-[#7676FF] left-0 h-0 right-0 px-[15px] py-2 transition-all duration-300 invisible overflow-hidden">
+                        <ul class="flex flex-col">
+                            <li class="relative group py-2 border-b-[3px] border-white cursor-pointer">
+                                <a href="#" class="text-white">خانه</a>
+                            </li>
+        
+                            <li class="relative group border-b-[1px] border-[rgba(255,255,255,0.3)] py-4 hover:border-b-[3px] hover:border-white transition-all duration-100 cursor-pointer">
+                                <a href="#" class="text-white">ویژگی ها</a>    
+                            </li>
+        
+                            <li class="relative group border-b-[1px] border-[rgba(255,255,255,0.3)] py-4 hover:border-b-[3px] hover:border-white transition-all duration-100 cursor-pointer">
+                                <a href="#" class="text-white">سرویس ها</a>
+                            </li>
+        
+                            <li class="relative group border-b-[1px] border-[rgba(255,255,255,0.3)] py-4 hover:border-b-[3px] hover:border-white transition-all duration-100 cursor-pointer">
+                                <a href="#" class="text-white">قیمت</a>    
+                            </li>
+        
+                            <li class="relative group border-b-[1px] border-[rgba(255,255,255,0.3)] py-4 hover:border-b-[3px] hover:border-white transition-all duration-100 cursor-pointer">
+                                <a href="#" class="text-white">صفحات </a>    
+                            </li>
+        
+                            <li class="relative group border-b-[1px] border-[rgba(255,255,255,0.3)] py-4 hover:border-b-[3px] hover:border-white transition-all duration-100 cursor-pointer">
+                                <a href="#" class="text-white">تماس با ما</a>    
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="flex items-center gap-8 justify-center mt-5">
+                                <div class="flex items-center gap-2">
+                                    <span>
+                                        <i class="far fa-comments text-white text-xl"></i>
+                                    </span>
+                                    <a href="#" class="text-white"> چت آنلاین</a>
+                                </div>
+                
+                                <a href="#" class="border-[1px] text-white border-white rounded-full py-2 px-10 transition-all duration-150 hover:bg-black 
+                                 hover:border-black">ورود</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--this is menu desktop -->
+                    <div>
+                        <ul class="hidden lg:flex items-center gap-8">
+                            <li class="relative group">
+                                <a href="#" class="text-white">خانه</a>
+                                <span class="absolute h-[2px] mx-auto bg-white left-0 right-0 -top-2 rounded-2xl"></span>
+                            </li>
+        
+                            <li class="relative group">
+                                <a href="#" class="text-white">ویژگی ها</a>
+                                <span class="absolute w-0 h-[2px] mx-auto bg-white left-0 right-0 -top-2 rounded-2xl group-hover:w-full transition-all duration-150"></span>
+    
+                            </li>
+        
+                            <li class="relative group">
+                                <a href="#" class="text-white">سرویس ها</a>
+                                <span class="absolute w-0 h-[2px] mx-auto bg-white left-0 right-0 -top-2 rounded-2xl group-hover:w-full transition-all duration-150"></span>
+    
+    
+                            </li>
+        
+                            <li class="relative group">
+                                <a href="#" class="text-white">قیمت</a>
+                                <span class="absolute w-0 h-[2px] mx-auto bg-white left-0 right-0 -top-2 rounded-2xl group-hover:w-full transition-all duration-150"></span>
+    
+                            </li>
+        
+                            <li class="relative group">
+                                <a href="#" class="text-white">صفحات </a>
+                                <span class="absolute w-0 h-[2px] mx-auto bg-white left-0 right-0 -top-2 rounded-2xl group-hover:w-full transition-all duration-150"></span>
+    
+                            </li>
+        
+                            <li class="relative group">
+                                <a href="#" class="text-white">تماس با ما</a>
+                                <span class="absolute w-0 h-[2px] mx-auto bg-white left-0 right-0 -top-2 rounded-2xl group-hover:w-full transition-all duration-150"></span>
+    
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- this is list desktop -->
+                <div class=" hidden lg:flex items-center gap-8">
+                    <div class="flex items-center gap-2">
+                        <span>
+                            <i class="far fa-comments text-white text-xl"></i>
+                        </span>
+                        <a href="#" class="text-white"> چت آنلاین</a>
+                    </div>
+    
+                    <a href="#" class="border-[1px] text-white border-white rounded-full py-2 px-10 transition-all duration-150 hover:bg-black 
+                     hover:border-black">ورود</a>
+                </div>
+                <!-- this is menu bar  -->
+                <div id="menuBar" class="relative w-[50px] h-[50px] rounded-xl border-2 border-white flex items-center justify-center cursor-pointer lg:hidden">
+                    <span id="menuBarLineCenter" class="absolute w-8 h-[3px] bg-white rounded-full transition-all duration-150 "></span>
+                    <span id="menuBarLineBottom" class="absolute w-8 h-[3px] bg-white rounded-full translate-y-2 transition-all duration-150"></span>
+                    <span id="menuBarLineTop" class="absolute w-8 h-[3px] bg-white rounded-full full -translate-y-2 transition-all duration-150 " ></span>
+                </div>
+            </div>
+        </nav>
+        <!-- this is content header -->
+        <div class="container">
+            <div class="text-white h-full flex flex-col items-center justify-center pt-44">
+                <p>یک شرکت با فضایی عالی</p>
+                <h1 class="text-5xl font-bold my-6">فضای میزبانی قدرتمند</h1>
+                <p class="mb-6">برای بر پاسازی یک سایت، اول از همه نیاز به یک مکان روی اینترنت داریم که بتوانیم فایل‌های سایت را روی آن بریزیم.</p>
+                <a href="#" class="border-[1px] text-white border-white rounded-full py-2 px-8 transition-all duration-150 hover:bg-black 
+                     hover:border-black">شروع</a>
+            </div>
+        </div>
+    </header>
+    <script src="./js/app.js" defer></script>
+</body>
+</html>

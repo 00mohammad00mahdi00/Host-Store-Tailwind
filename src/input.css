@@ -22,9 +22,14 @@
         height: 100vh;
         background-attachment: fixed;
     }
-    
-    *{
-        font-family: "vazir";
+  
+    .bg_packages{
+        background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/home/priceTable-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        object-fit: cover;
+        
     }
 }
 

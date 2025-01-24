@@ -563,24 +563,6 @@ video {
         url("./fonts/Vazir.eot") format("eot");
 }
 
-.header{
-  background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/banner/hero-banner-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
-}
-
-.bg_packages{
-  background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/home/priceTable-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .container {
   width: 100%;
   margin-right: auto;
@@ -617,10 +599,6 @@ video {
   .container {
     max-width: 1320px;
   }
-}
-
-.invisible {
-  visibility: hidden;
 }
 
 .fixed {
@@ -664,14 +642,14 @@ video {
   margin-right: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-1 {
@@ -694,6 +672,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -706,12 +688,20 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-3 {
@@ -724,10 +714,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
 }
 
 .block {
@@ -748,10 +734,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-0 {
-  height: 0px;
 }
 
 .h-\[2px\] {
@@ -786,6 +768,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[320px\] {
+  max-width: 320px;
+}
+
 .max-w-\[330px\] {
   max-width: 330px;
 }
@@ -796,10 +782,6 @@ video {
 
 .max-w-\[404px\] {
   max-width: 404px;
-}
-
-.max-w-\[300px\] {
-  max-width: 300px;
 }
 
 .-translate-y-2 {
@@ -870,6 +852,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .gap-y-20 {
@@ -957,8 +943,18 @@ video {
   border-bottom-color: rgba(0,0,0,0.2);
 }
 
+.border-b-white {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
 .border-t-\[rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
   border-top-color: rgba(0,0,0,0.2);
+}
+
+.bg-\[\#0c112a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 17 42 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#6128be\] {
@@ -976,6 +972,11 @@ video {
   background-color: rgb(249 249 249 / var(--tw-bg-opacity, 1));
 }
 
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -989,12 +990,12 @@ video {
   padding: 2.75rem;
 }
 
-.p-14 {
-  padding: 3.5rem;
-}
-
 .p-12 {
   padding: 3rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-10 {
@@ -1005,6 +1006,11 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -1066,6 +1072,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1078,6 +1088,10 @@ video {
   padding-bottom: 10rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1088,6 +1102,10 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .pt-44 {
@@ -1135,6 +1153,11 @@ video {
   font-weight: 700;
 }
 
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+}
+
 .text-third {
   --tw-text-opacity: 1;
   color: rgb(136 136 136 / var(--tw-text-opacity, 1));
@@ -1174,6 +1197,42 @@ video {
 
 .duration-75 {
   transition-duration: 75ms;
+}
+
+.header{
+  background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/banner/hero-banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.bg_packages{
+  background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/home/priceTable-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bar-bottom{
+  transform: rotate(45deg);
+}
+
+.bar-top{
+  transform: rotate(-45deg);
+}
+
+.open__menu{
+  visibility: visible;
+  height: 430px;
+}
+
+.close__menu{
+  visibility: hidden;
+  height: 0;
 }
 
 .hover\:border-b-\[3px\]:hover {
@@ -1216,12 +1275,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:shadow-lg:hover {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .focus\:outline-2:focus {
   outline-width: 2px;
 }
@@ -1241,10 +1294,6 @@ video {
 @media (min-width: 540px) {
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:max-w-\[404px\] {
-    max-width: 404px;
   }
 
   .sm\:flex-row {
@@ -1324,6 +1373,10 @@ video {
 }
 
 @media (min-width: 1140px) {
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .xl\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -1336,4 +1389,3 @@ video {
     gap: 2rem;
   }
 }
-

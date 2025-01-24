@@ -23,7 +23,7 @@
                         <img src="./img/logo.png" alt="logo">
                     </div>
                     <!--this is menu mobile  -->
-                    <div id="menuMobile" class="fixed lg:hidden top-20 bg-[#7676FF] left-0 h-0 right-0 px-[15px] py-2 transition-all duration-300 invisible overflow-hidden">
+                    <div id="menuMobile" class="fixed lg:hidden top-20 bg-[#7676FF] left-0  right-0 px-[15px] py-2 transition-all duration-300 overflow-hidden close__menu">
                         <ul class="flex flex-col">
                             <li class="relative group py-2 border-b-[3px] border-white cursor-pointer">
                                 <a href="#" class="text-white">خانه</a>
@@ -117,7 +117,7 @@
                      hover:border-black">ورود</a>
                 </div>
                 <!-- this is menu bar  -->
-                <div id="menuBar" class="relative w-[50px] h-[50px] rounded-xl border-2 border-white flex items-center justify-center cursor-pointer lg:hidden">
+                <div id="menuBar" class="relative  w-[50px] h-[50px] rounded-xl border-2 border-white flex items-center justify-center cursor-pointer lg:hidden">
                     <span id="menuBarLineCenter" class="absolute w-8 h-[3px] bg-white rounded-full transition-all duration-150 "></span>
                     <span id="menuBarLineBottom" class="absolute w-8 h-[3px] bg-white rounded-full translate-y-2 transition-all duration-150"></span>
                     <span id="menuBarLineTop" class="absolute w-8 h-[3px] bg-white rounded-full full -translate-y-2 transition-all duration-150 " ></span>
@@ -428,6 +428,75 @@
     -->
     </main>
 
+    <!-- 
+        this is section footer
+    -->
+    <footer class="bg-[#0c112a] text-white pt-24 pb-5">
+        <div class="container">
+            <!-- this is wrapper for box -->
+            <div class="grid grid-cols-12 gap-y-10  gap-x- border-b-[1px] border-b-white pb-14">
+                <!-- this is box for content -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                    <h3 class="text-2xl font-bold mb-4">درباره ما</h3>
+                    <p class="text-third mb-6">از فضای میزبانی با نام هاست هم نام برده می‌شود که در اصل اگر Host را به فارسی برگردانی کنیم، همان معنی و مفهوم فضای میزبانی را می‌دهد.</p>
+                    <img src="./img/logo.png" alt="log footer">
+                </div>
+                 <!-- this is box for content -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                    <h3 class="text-2xl font-bold mb-4">اطلاعات تماس</h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="text-third mb-6">آدرس : ایران | قزوین</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-third mb-6">تلفن : 09191234567</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-third mb-6">ایمیل : raminjoshang@yahoo.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- this is box for content -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                    <h3 class="text-2xl font-bold mb-4">لینک های مهم</h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="text-third mb-6">قوانین و مقررات</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-third mb-6">سوالات متداول</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-third mb-6">حساب کاربری</a>
+                        </li>
+                    </ul>
+                </div>
+                 <!-- this is box for content -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                    <h3 class="text-2xl font-bold mb-4">خبرنامه</h3>
+                    <p class="text-third mb-8 w-full max-w-[320px]">با عضویت در خبرنامه از تمامی خبرهای جدید و جدیدترین مطالب سایت باخبر شوید</p>
+                    <div class="bg-white w-full  rounded-lg overflow-hidden flex justify-between items-center ">
+                        <input class="p-2 outline-none text-third w-full" type="text" placeholder="ایمیل شما...">
+                        <a href="#" class="p-2 px-3 bg-blue-600 ">
+                            <span>
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </a>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="text-center mt-4 text-third">
+                    <p>CopyRight © 2025 All Rights reserved | This template is made with by <span class="text-blue-800">mohammad mhaid ganjalia</span></p>
+                    <div>فارسی و راست چین شده با توسط <span class="text-blue-800">محمد مهدی گنج علیا</span></div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </footer>
+
+    
     <script src="./js/app.js" defer></script>
 </body>
 </html>

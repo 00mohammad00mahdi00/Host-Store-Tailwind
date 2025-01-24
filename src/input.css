@@ -14,22 +14,38 @@
         url("./fonts/Vazir.eot") format("eot");
     }
 
-    .header{
-        background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/banner/hero-banner-bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        background-attachment: fixed;
-    }
-  
-    .bg_packages{
-        background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/home/priceTable-bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right;
-        object-fit: cover;
-        
-    }
+   
+}
+.header{
+    background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/banner/hero-banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
+.bg_packages{
+    background: linear-gradient(to left ,rgba(41, 38, 172,85%), rgb(97, 40, 190,85%)), url("./img/home/priceTable-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    object-fit: cover;
+    
+}   
+.bar-bottom{
+    transform: rotate(45deg);
+}
+
+.bar-top{
+    transform: rotate(-45deg);
+}
+.open__menu{
+    visibility: visible;
+    height: 430px;
+}
+
+.close__menu{
+    visibility: hidden;
+    height: 0;
+}
